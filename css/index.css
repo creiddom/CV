@@ -50,7 +50,7 @@ table {
 
 @font-face {
   font-family: "Tomorrow";
-  src: local("Tomorrow"), url("/fonts/Tomorrow-Medium.ttf");
+  src: local("Tomorrow"), url("/CV/fonts/Tomorrow-Medium.ttf");
 }
 .wrapper {
   width: 100vw;
