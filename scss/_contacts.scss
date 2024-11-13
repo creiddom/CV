@@ -38,22 +38,24 @@
 		height: 2vw;
 		background-image: url(/img/telegram_black.png);
 		background-size: contain;
+		transition: all 1s;
 	}
 
 	&_telegram:hover {
 		background-image: url(/img/telegram_color.png);
-		transition: 1s;
+		// transition: 1s
 	}
 	&_email {
 		width: 2vw;
 		height: 2vw;
 		background-image: url(/img/email_black.png);
 		background-size: cover;
+		transition: all 1s;
 	}
 
 	&_email:hover {
 		background-image: url(/img/email_color.png);
-		transition: 1s;
+		// transition: 1s
 	}
 
 	&_phone {
@@ -61,12 +63,13 @@
 		height: 2vw;
 		background-image: url(/img/phone_black.png);
 		background-size: cover;
+		transition: all 1s;
 	}
 
 	&_phone:hover {
 		background-image: url(/img/phone_color.png);
-		transition: 1s;
+		// transition: 1s;
 	}
-
-
 }
+
+
