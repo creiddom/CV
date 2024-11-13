@@ -1,0 +1,36 @@
+.contacts {
+  display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 70vw;
+	height: 30vh;
+
+	&_img {
+		display: block;
+		width: 300px;
+		height: 100px;
+	}
+
+	&_telegram {
+		width: 50px;
+		height: 50px;
+		background-image: url(/img/telegram_black.png);
+		background-size: cover;
+	}
+
+	&_telegram:hover {
+		background-image: url(/img/telegram_color.png);
+		transition: 1s;
+	}
+	&_email {
+		width: 50px;
+		height: 50px;
+		background-image: url(/img/email_black.png);
+		background-size: cover;
+	}
+
+	&_email:hover {
+		background-image: url(/img/email_color.png);
+		transition: 1s;
+	}
+}
