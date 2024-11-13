@@ -1,0 +1,28 @@
+@media (max-width: 900px) {
+	.header {
+		&_title {
+			font-size: 8vw;
+			margin: auto;
+		}
+	}
+
+	.contacts {
+		flex-direction: column;
+		width: 100vw;
+		height: auto;
+
+		&_img {
+			margin: auto;
+			width: 50vw;
+		}
+
+		&_telegram, &_email, &_phone {
+			width: 35px;
+			height: 35px;
+		}
+
+		&_info {
+			justify-content: space-around;
+		}
+	}
+}

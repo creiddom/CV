@@ -115,6 +115,7 @@ table {
   height: 2vw;
   background-image: url(/CV/img/telegram_black.png);
   background-size: contain;
+  transition: all 1s;
 }
 .contacts_telegram:hover {
   background-image: url(/CV/img/telegram_color.png);
@@ -125,6 +126,7 @@ table {
   height: 2vw;
   background-image: url(/CV/img/email_black.png);
   background-size: cover;
+  transition: all 1s;
 }
 .contacts_email:hover {
   background-image: url(/CV/img/email_color.png);
@@ -135,8 +137,31 @@ table {
   height: 2vw;
   background-image: url(/CV/img/phone_black.png);
   background-size: cover;
+  transition: all 1s;
 }
 .contacts_phone:hover {
   background-image: url(/CV/img/phone_color.png);
-  transition: 1s;
+}
+
+@media (max-width: 900px) {
+  .header_title {
+    font-size: 8vw;
+    margin: auto;
+  }
+  .contacts {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+  }
+  .contacts_img {
+    margin: auto;
+    width: 50vw;
+  }
+  .contacts_telegram, .contacts_email, .contacts_phone {
+    width: 35px;
+    height: 35px;
+  }
+  .contacts_info {
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=index.css.map */
