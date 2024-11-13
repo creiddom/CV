@@ -36,35 +36,35 @@
 	&_telegram {
 		width: 2vw;
 		height: 2vw;
-		background-image: url(/img/telegram_black.png);
+		background-image: url(/CV/img/telegram_black.png);
 		background-size: contain;
 	}
 
 	&_telegram:hover {
-		background-image: url(/img/telegram_color.png);
+		background-image: url(/CV/img/telegram_color.png);
 		transition: 1s;
 	}
 	&_email {
 		width: 2vw;
 		height: 2vw;
-		background-image: url(/img/email_black.png);
+		background-image: url(/CV/img/email_black.png);
 		background-size: cover;
 	}
 
 	&_email:hover {
-		background-image: url(/img/email_color.png);
+		background-image: url(/CV/img/email_color.png);
 		transition: 1s;
 	}
 
 	&_phone {
 		width: 2vw;
 		height: 2vw;
-		background-image: url(/img/phone_black.png);
+		background-image: url(/CV/img/phone_black.png);
 		background-size: cover;
 	}
 
 	&_phone:hover {
-		background-image: url(/img/phone_color.png);
+		background-image: url(/CV/img/phone_color.png);
 		transition: 1s;
 	}
 
