@@ -36,7 +36,7 @@
 	&_telegram {
 		width: 2vw;
 		height: 2vw;
-		background-image: url(/img/telegram_black.png);
+		background-image: url(/CV/img/telegram_black.png);
 		background-size: contain;
 		transition: all 1s;
 	}
@@ -48,7 +48,7 @@
 	&_email {
 		width: 2vw;
 		height: 2vw;
-		background-image: url(/img/email_black.png);
+		background-image: url(/CV/img/email_black.png);
 		background-size: cover;
 		transition: all 1s;
 	}
@@ -61,7 +61,7 @@
 	&_phone {
 		width: 2vw;
 		height: 2vw;
-		background-image: url(/img/phone_black.png);
+		background-image: url(/CV/img/phone_black.png);
 		background-size: cover;
 		transition: all 1s;
 	}
@@ -71,5 +71,3 @@
 		// transition: 1s;
 	}
 }
-
-

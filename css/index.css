@@ -50,7 +50,7 @@ table {
 
 @font-face {
   font-family: "Tomorrow";
-  src: local("Tomorrow"), url("/fonts/Tomorrow-Medium.ttf");
+  src: local("Tomorrow"), url("/CV/fonts/Tomorrow-Medium.ttf");
 }
 .wrapper {
   width: 100vw;
@@ -63,7 +63,7 @@ table {
   top: 0;
   width: 100vw;
   height: 30vh;
-  background-image: url(/img/main_background.jpg);
+  background-image: url(/CV/img/main_background.jpg);
   background-size: cover;
   z-index: 0;
 }
@@ -113,32 +113,34 @@ table {
 .contacts_telegram {
   width: 2vw;
   height: 2vw;
-  background-image: url(/img/telegram_black.png);
+  background-image: url(/CV/img/telegram_black.png);
   background-size: contain;
   transition: all 1s;
 }
 .contacts_telegram:hover {
-  background-image: url(/img/telegram_color.png);
+  background-image: url(/CV/img/telegram_color.png);
+  transition: 1s;
 }
 .contacts_email {
   width: 2vw;
   height: 2vw;
-  background-image: url(/img/email_black.png);
+  background-image: url(/CV/img/email_black.png);
   background-size: cover;
   transition: all 1s;
 }
 .contacts_email:hover {
-  background-image: url(/img/email_color.png);
+  background-image: url(/CV/img/email_color.png);
+  transition: 1s;
 }
 .contacts_phone {
   width: 2vw;
   height: 2vw;
-  background-image: url(/img/phone_black.png);
+  background-image: url(/CV/img/phone_black.png);
   background-size: cover;
   transition: all 1s;
 }
 .contacts_phone:hover {
-  background-image: url(/img/phone_color.png);
+  background-image: url(/CV/img/phone_color.png);
 }
 
 @media (max-width: 900px) {
