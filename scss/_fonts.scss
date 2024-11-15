@@ -1,6 +1,46 @@
 @font-face {
-    font-family: "Tomorrow";
-    src:
-      local("Tomorrow"),
-      url("/CV/fonts/Tomorrow-Medium.ttf");
-  }
+  font-family: "Tomorrow";
+  src:
+    local("Tomorrow"),
+    url("/fonts/Tomorrow-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Cornerita";
+  font-weight: bold;
+  src:
+    local("Cornerita"),
+    url("/fonts/Cornerita\ Bold.ttf");
+}
+
+@font-face {
+  font-family: "Cornerita";
+  font-weight: normal;
+  src:
+    local("Cornerita regular"),
+    url("/fonts/Cornerita\ Regular.ttf");
+}
+
+@font-face {
+  font-family: "Cornerita";
+  font-weight: light;
+  src:
+    local("Cornerita light"),
+    url("/fonts/Cornerita-VF.ttf");
+}
+
+@font-face {
+  font-family: "Futura";
+  font-weight: normal;
+  src:
+    local("Cornerita light"),
+    url("/fonts/futuramdbtrusbyme_medium.otf");
+}
+
+@font-face {
+  font-family: "Futura";
+  font-weight: bold;
+  src:
+    local("Cornerita light"),
+    url("/fonts/futuramdbtrusbyme_bold.otf");
+}

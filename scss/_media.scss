@@ -1,5 +1,7 @@
 @media (max-width: 900px) {
 	.header {
+		width: 100%;
+
 		&_title {
 			font-size: 8vw;
 			margin: auto;
@@ -8,7 +10,6 @@
 
 	.contacts {
 		flex-direction: column;
-		width: 100vw;
 		height: auto;
 
 		&_img {

@@ -1,19 +1,23 @@
 .contacts {
-	position: relative;
-	top: 5vw;
-  display: flex;
+  	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	width: 70vw;
+	// justify-content: space-between;
 	height: 30vh;
-	margin: auto;
-	margin-top: -10vw;
 	z-index: 1;
-	background-color: ivory;
-	padding: 2vw;
-	font-family: Tomorrow;
-	font-size: 0.5 vw;
-	box-shadow: 0 10px 10px rgba(235, 230, 230, 0.8);
+	font-family: Futura;
+	font-weight: normal;
+	justify-content: center; /* Горизонтальное выравнивание */
+	align-items: center;
+
+	&_title {
+		width: 2vw;
+		height: 2vw;
+	}
+
+	&_titlet {
+		font-weight: bold;
+		font-size: 3vh;
+	}
 
 	&_img {
 		display: block;
@@ -29,14 +33,14 @@
 		gap: 20px;
 		grid-template-columns: 50px auto;
 		align-items: center;
-		width: 60%;
+		// width: 60%;
 		padding-left: 5vw;
 	}
 
 	&_telegram {
 		width: 2vw;
 		height: 2vw;
-		background-image: url(/CV/img/telegram_black.png);
+		background-image: url(/img/telegram_black.png);
 		background-size: contain;
 		transition: all 1s;
 	}
@@ -48,7 +52,7 @@
 	&_email {
 		width: 2vw;
 		height: 2vw;
-		background-image: url(/CV/img/email_black.png);
+		background-image: url(/img/email_black.png);
 		background-size: cover;
 		transition: all 1s;
 	}
@@ -61,7 +65,7 @@
 	&_phone {
 		width: 2vw;
 		height: 2vw;
-		background-image: url(/CV/img/phone_black.png);
+		background-image: url(/img/phone_black.png);
 		background-size: cover;
 		transition: all 1s;
 	}

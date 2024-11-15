@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,11 +51,117 @@ table {
 
 @font-face {
   font-family: "Tomorrow";
-  src: local("Tomorrow"), url("/CV/fonts/Tomorrow-Medium.ttf");
+  src: local("Tomorrow"), url("/fonts/Tomorrow-Medium.ttf");
 }
+@font-face {
+  font-family: "Cornerita";
+  font-weight: bold;
+  src: local("Cornerita"), url("/fonts/Cornerita Bold.ttf");
+}
+@font-face {
+  font-family: "Cornerita";
+  font-weight: normal;
+  src: local("Cornerita regular"), url("/fonts/Cornerita Regular.ttf");
+}
+@font-face {
+  font-family: "Cornerita";
+  font-weight: light;
+  src: local("Cornerita light"), url("/fonts/Cornerita-VF.ttf");
+}
+@font-face {
+  font-family: "Futura";
+  font-weight: normal;
+  src: local("Cornerita light"), url("/fonts/futuramdbtrusbyme_medium.otf");
+}
+@font-face {
+  font-family: "Futura";
+  font-weight: bold;
+  src: local("Cornerita light"), url("/fonts/futuramdbtrusbyme_bold.otf");
+}
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #118270;
+  position: relative;
+  line-height: 20px;
+}
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #118270;
+  transition: width 0.3s ease-in-out;
+}
+a:hover::after {
+  width: 100%;
+}
+
 .wrapper {
-  width: 100vw;
+  position: relative;
+  top: 5vw;
+  width: 60vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  margin-top: -10vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  background-color: white;
+  font-size: 0.5 vw;
+  box-shadow: 0 10px 10px rgba(235, 230, 230, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 60vw;
+}
+
+.name {
+  text-align: center;
+  font-family: Cornerita;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  width: 55vw;
+  margin: 0 auto;
+}
+
+.tab {
+  font-family: Futura;
+  font-weight: normal;
+  width: 50%;
+  flex: 1 1 20vw;
+  padding: 30px;
+  border: 2px solid transparent;
+  -o-border-image: linear-gradient(to bottom right, #053430 25%, transparent 25%) 10;
+     border-image: linear-gradient(to bottom right, #053430 25%, transparent 25%) 10;
+}
+.tab h2 {
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #053430;
+}
+.tab h2::after {
+  content: " ";
+  display: block;
+  height: 2px;
+  background: black;
+  margin-top: 20px;
 }
 
 .header {
@@ -63,36 +170,81 @@ table {
   top: 0;
   width: 100vw;
   height: 30vh;
-  background-image: url(/CV/img/main_background.jpg);
+  background-color: #053430;
+  background-image: url(/img/main_background.jpg);
   background-size: cover;
   z-index: 0;
 }
 .header_title {
   display: inline-block;
-  font-family: Tomorrow;
+  font-family: Cornerita;
+  font-weight: bold;
   color: ivory;
   font-size: 5vw;
   margin: auto;
   position: relative;
   top: 0;
 }
-
-.contacts {
-  position: relative;
-  top: 5vw;
+.header_nav {
+  display: block;
+  width: 60vw;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.header_menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 70vw;
+  flex-wrap: nowrap;
+  justify-content: first baseline;
+  font-family: Cornerita;
+  font-size: 2vw;
+  align-items: flex-start;
+}
+.header_menu_item {
+  position: relative;
+  display: inline-block;
+  padding-right: 1.5vw;
+}
+.header_menu_item a {
+  color: white;
+  text-decoration: none;
+}
+.header_menu_item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+.header_menu_item:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .header_items {
+    display: none;
+  }
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
   height: 30vh;
-  margin: auto;
-  margin-top: -10vw;
   z-index: 1;
-  background-color: ivory;
-  padding: 2vw;
-  font-family: Tomorrow;
-  font-size: 0.5 vw;
-  box-shadow: 0 10px 10px rgba(235, 230, 230, 0.8);
+  font-family: Futura;
+  font-weight: normal;
+  justify-content: center; /* Горизонтальное выравнивание */
+  align-items: center;
+}
+.contacts_title {
+  width: 2vw;
+  height: 2vw;
+}
+.contacts_titlet {
+  font-weight: bold;
+  font-size: 3vh;
 }
 .contacts_img {
   display: block;
@@ -107,50 +259,88 @@ table {
   gap: 20px;
   grid-template-columns: 50px auto;
   align-items: center;
-  width: 60%;
   padding-left: 5vw;
 }
 .contacts_telegram {
   width: 2vw;
   height: 2vw;
-  background-image: url(/CV/img/telegram_black.png);
+  background-image: url(/img/telegram_black.png);
   background-size: contain;
   transition: all 1s;
 }
 .contacts_telegram:hover {
-  background-image: url(/CV/img/telegram_color.png);
-  transition: 1s;
+  background-image: url(/img/telegram_color.png);
 }
 .contacts_email {
   width: 2vw;
   height: 2vw;
-  background-image: url(/CV/img/email_black.png);
+  background-image: url(/img/email_black.png);
   background-size: cover;
   transition: all 1s;
 }
 .contacts_email:hover {
-  background-image: url(/CV/img/email_color.png);
-  transition: 1s;
+  background-image: url(/img/email_color.png);
 }
 .contacts_phone {
   width: 2vw;
   height: 2vw;
-  background-image: url(/CV/img/phone_black.png);
+  background-image: url(/img/phone_black.png);
   background-size: cover;
   transition: all 1s;
 }
 .contacts_phone:hover {
-  background-image: url(/CV/img/phone_color.png);
+  background-image: url(/img/phone_color.png);
+}
+
+.experience {
+  height: auto;
+  font-family: Cornerita;
+  text-align: center;
+  width: 60vw;
+}
+.experience_list ul {
+  margin-bottom: 2vh;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.experience_examples ul {
+  margin-bottom: 2vh;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 5vh;
+  margin-bottom: 2vh;
+  color: #053430;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3vh;
+  margin-bottom: 1vh;
+}
+
+h3 {
+  font-weight: light;
+  font-size: 2.5vh;
+  margin-bottom: 2vh;
+  color: #053430;
+}
+
+p {
+  margin-bottom: 2vh;
 }
 
 @media (max-width: 900px) {
+  .header {
+    width: 100%;
+  }
   .header_title {
     font-size: 8vw;
     margin: auto;
   }
   .contacts {
     flex-direction: column;
-    width: 100vw;
     height: auto;
   }
   .contacts_img {
