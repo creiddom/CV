@@ -4,17 +4,68 @@
 	top: 0;
 	width: 100vw;
 	height: 30vh;
-	background-image: url(/CV/img/main_background.jpg);
+  background-color: #053430;
+	background-image: url(/img/main_background.jpg);
 	background-size:cover;
 	z-index: 0;
-
+  
 	&_title {
     display: inline-block;
-    font-family: Tomorrow;
+    font-family: Cornerita;
+    font-weight: bold;
     color: ivory;
     font-size: 5vw;
     margin: auto;
     position: relative;
     top: 0;
+  }
+
+  &_nav {
+    display: block;
+    width: 60vw;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  &_menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:first baseline;
+    font-family: Cornerita;
+    font-size: 2vw;
+    align-items:flex-start;
+
+    &_item {
+      position: relative; 
+      display: inline-block;
+      padding-right: 1.5vw;
+
+      & a {
+      color: white;
+      text-decoration: none;
+      }
+
+      &::after {
+        content: ''; 
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px; 
+        width: 0; 
+        background-color: white; 
+        transition: width 0.3s ease-in-out; 
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    } 
+  }
+}
+
+@media (max-width: 900px) {
+  .header_items {
+    display: none;
   }
 }

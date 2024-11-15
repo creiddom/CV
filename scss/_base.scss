@@ -1,4 +1,97 @@
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #118270;
+  position: relative;
+  line-height: 20px;
+
+  &::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; 
+    width: 0; 
+    background-color: #118270; 
+    transition: width 0.3s ease-in-out; 
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
 .wrapper {
-  width: 100vw;
+  position: relative;
+	top: 5vw;
+  width: 60vw;
 	height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  margin-top: -10vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  background-color: white;
+	font-size: 0.5 vw;
+	box-shadow: 0 10px 10px rgba(235, 230, 230, 0.8);
+  margin-left: auto;
+	margin-right: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 60vw;
+}
+
+.name {
+  text-align: center;
+  font-family: Cornerita;
+
+  // &::after {
+  //   content: " ";
+  //   display: block;
+  //   height: 2px;
+  //   background: black;
+  //   margin-top: 20px;
+  // }
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  width: 55vw;
+  margin: 0 auto;
+}
+
+.tab {
+  font-family: Futura;
+  font-weight: normal;
+  width: 50%;
+  flex: 1 1 20vw;
+  padding: 30px;
+
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom right, #053430 25%, transparent 25%) 10;
+
+  & h2 {
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #053430;
+
+    &::after {
+      content: " ";
+      display: block;
+      height: 2px;
+      background: black;
+      margin-top: 20px;
+    }
+  }
 }
