@@ -51,32 +51,32 @@ table {
 
 @font-face {
   font-family: "Tomorrow";
-  src: local("Tomorrow"), url("/fonts/Tomorrow-Medium.ttf");
+  src: local("Tomorrow"), url("/CV/fonts/Tomorrow-Medium.ttf");
 }
 @font-face {
   font-family: "Cornerita";
   font-weight: bold;
-  src: local("Cornerita"), url("/fonts/Cornerita Bold.ttf");
+  src: local("Cornerita"), url("/CV/fonts/Cornerita Bold.ttf");
 }
 @font-face {
   font-family: "Cornerita";
   font-weight: normal;
-  src: local("Cornerita regular"), url("/fonts/Cornerita Regular.ttf");
+  src: local("Cornerita regular"), url("/CV/fonts/Cornerita Regular.ttf");
 }
 @font-face {
   font-family: "Cornerita";
   font-weight: light;
-  src: local("Cornerita light"), url("/fonts/Cornerita-VF.ttf");
+  src: local("Cornerita light"), url("/CV/fonts/Cornerita-VF.ttf");
 }
 @font-face {
   font-family: "Futura";
   font-weight: normal;
-  src: local("Cornerita light"), url("/fonts/futuramdbtrusbyme_medium.otf");
+  src: local("Cornerita light"), url("/CV/fonts/futuramdbtrusbyme_medium.otf");
 }
 @font-face {
   font-family: "Futura";
   font-weight: bold;
-  src: local("Cornerita light"), url("/fonts/futuramdbtrusbyme_bold.otf");
+  src: local("Cornerita light"), url("/CV/fonts/futuramdbtrusbyme_bold.otf");
 }
 body {
   overflow-x: hidden;
@@ -171,7 +171,7 @@ a:hover::after {
   width: 100vw;
   height: 30vh;
   background-color: #053430;
-  background-image: url(/img/main_background.jpg);
+  background-image: url(/CV/img/main_background.jpg);
   background-size: cover;
   z-index: 0;
 }
@@ -264,32 +264,32 @@ a:hover::after {
 .contacts_telegram {
   width: 2vw;
   height: 2vw;
-  background-image: url(/img/telegram_black.png);
+  background-image: url(/CV/img/telegram_black.png);
   background-size: contain;
   transition: all 1s;
 }
 .contacts_telegram:hover {
-  background-image: url(/img/telegram_color.png);
+  background-image: url(/CV/img/telegram_color.png);
 }
 .contacts_email {
   width: 2vw;
   height: 2vw;
-  background-image: url(/img/email_black.png);
+  background-image: url(/CV/img/email_black.png);
   background-size: cover;
   transition: all 1s;
 }
 .contacts_email:hover {
-  background-image: url(/img/email_color.png);
+  background-image: url(/CV/img/email_color.png);
 }
 .contacts_phone {
   width: 2vw;
   height: 2vw;
-  background-image: url(/img/phone_black.png);
+  background-image: url(/CV/img/phone_black.png);
   background-size: cover;
   transition: all 1s;
 }
 .contacts_phone:hover {
-  background-image: url(/img/phone_color.png);
+  background-image: url(/CV/img/phone_color.png);
 }
 
 .experience {
