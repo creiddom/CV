@@ -26,4 +26,21 @@
 			justify-content: space-around;
 		}
 	}
+
+		.header_nav {
+		  display: none;
+		}
+
+		.wrapper {
+			width: 100vw;
+		}
+
+		.tabs {
+			width: 100vw;
+			flex-direction: column;
+		}
+
+		.block {
+			width:85vw;
+		}
 }
